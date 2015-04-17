@@ -1,8 +1,5 @@
-define emi::wlcg_voms_package (
-  $vo
-)
-{
-  package{"wlcg-voms-${vo}":
+define emi::wlcg_voms_package {
+  package{"wlcg-voms-${title}":
     ensure => present
   }
 }
