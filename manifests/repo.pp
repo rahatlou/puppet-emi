@@ -3,7 +3,7 @@ class emi::repo {
   if ($emi::with_wlcg) {
     yumrepo{'wlcg':
       descr    => 'WLCG Repository',
-      baseurl  => 'http://linuxsoft.cern.ch/wlcg/sl6/${architecture}',
+      baseurl  => "http://linuxsoft.cern.ch/wlcg/sl6/${architecture}",
       protect  => '1',
       enabled  => '1',
       priority => '50',
