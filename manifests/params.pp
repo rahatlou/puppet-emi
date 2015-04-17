@@ -6,10 +6,10 @@ class emi::params {
   $profiles = ['ui']
 
   $packages = {
-    ui        => ['emi-ui','glite-ce-monitor-cli'],
+    ui => ['emi-ui','glite-ce-monitor-cli'],
   }
   
   $nodetype = {
-    ui = ['UI']
+    ui => ['UI']
   }
 }
