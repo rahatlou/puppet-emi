@@ -38,6 +38,8 @@
 class emi (
   $profile,
   $siteinfo,
+  $with_wlcg = true,
+  $VOs       = []
 )
 inherits emi::params {
 
