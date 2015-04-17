@@ -1,5 +1,5 @@
 class emi::install {
-  package{$packages::emi::params[$emi::profile]:
+  package{$emi::params::packages[$emi::profile]:
     ensure => installed
   }
 }
