@@ -42,7 +42,7 @@ class emi (
 inherits emi::params {
 
   class{'emi::repo':} ->
-  class{'emi::install'} ->
-  class{'emi::configure'}
+  class{'emi::install':} ->
+  class{'emi::configure':}
   
 }
