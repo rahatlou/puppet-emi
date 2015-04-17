@@ -5,6 +5,6 @@ class emi::configure {
   
   exec {"yaim-config-${emi::profile}":
     command => $command,
-    unless  => "/bin/grep 'YAIM terminated succesfully' ${yaimlog}",
+    unless  => "/bin/grep 'YAIM terminated succesfully' ${emi::params::yaimlog}",
   }
 }
