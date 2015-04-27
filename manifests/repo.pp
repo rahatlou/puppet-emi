@@ -11,11 +11,15 @@ class emi::repo {
     }
     
   }
+  package{$emi::params::packages_for_all:
+    ensure => installed,
+  }
   
   package{"emi-release-3.0.0":
     ensure   => present,
     source   => $emi::params::emi_rel_rpm,
     provider => 'rpm',
+    require => Package[$emi::params::packages_for_all]
   }
   
 }
