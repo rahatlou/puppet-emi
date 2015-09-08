@@ -7,7 +7,7 @@ class emi::params {
   $profiles = ['ui', 'wn']
   $packages = {
     ui => ['emi-ui', 'glite-ce-monitor-cli'],
-    wn => ['emi-wn', 'glite-ce-monitor-cli', 'glexec-wn'],
+    wn => ['emi-wn', 'glite-ce-monitor-cli', 'glexec-wn', 'yaim-glexec-wn'],
   }
   $nodetype = {
     ui => ['UI'],
