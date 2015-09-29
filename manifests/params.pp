@@ -12,7 +12,7 @@ class emi::params {
   }
   $nodetype = {
     ui      => ['UI'],
-    wn      => ['WN', 'GLEXEC_wn']
+    wn      => ['WN', 'GLEXEC_wn'],
     creamce => ['creamCE', 'LSF_utils']
   }
 }
