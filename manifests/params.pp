@@ -4,13 +4,15 @@ class emi::params {
   $yaimbin='/opt/glite/yaim/bin/yaim'
   $yaimlog='/opt/glite/yaim/reconfig.log'
   $packages_for_all = ['yum-plugin-priorities', 'yum-plugin-protectbase']
-  $profiles = ['ui', 'wn']
+  $profiles = ['ui', 'wn', 'creamce']
   $packages = {
-    ui => ['emi-ui', 'glite-ce-monitor-cli'],
-    wn => ['emi-wn', 'glite-ce-monitor-cli', 'glexec-wn', 'yaim-glexec-wn'],
+    ui      => ['emi-ui', 'glite-ce-monitor-cli'],
+    wn      => ['emi-wn', 'glite-ce-monitor-cli', 'glexec-wn', 'yaim-glexec-wn'],
+    creamce => ['emi-lsf-utils', 'emi-cream-ce']
   }
   $nodetype = {
-    ui => ['UI'],
-    wn => ['WN', 'GLEXEC_wn']
+    ui      => ['UI'],
+    wn      => ['WN', 'GLEXEC_wn']
+    creamce => ['creamCE', 'LSF_utils']
   }
 }
