@@ -5,14 +5,20 @@ class emi::params {
   $yaimlog='/opt/glite/yaim/reconfig.log'
   $packages_for_all = ['yum-plugin-priorities', 'yum-plugin-protectbase']
   $profiles = ['ui', 'wn', 'creamce']
+
+  ## from the table at https://twiki.cern.ch/twiki/bin/view/EMI/GenericInstallationConfigurationEMI3 below 'Installations'
   $packages = {
     ui      => ['emi-ui', 'glite-ce-monitor-cli'],
     wn      => ['emi-wn', 'glite-ce-monitor-cli', 'glexec-wn', 'yaim-glexec-wn'],
-    creamce => ['emi-lsf-utils', 'emi-cream-ce']
+    creamce => ['emi-lsf-utils', 'emi-cream-ce'],
+    argus   => ['emi-argus']
   }
+
+  ##From the table at https://twiki.cern.ch/twiki/bin/view/EMI/GenericInstallationConfigurationEMI3 below 'Configuration information'
   $nodetype = {
     ui      => ['UI'],
     wn      => ['WN', 'GLEXEC_wn'],
-    creamce => ['creamCE', 'LSF_utils']
+    creamce => ['creamCE', 'LSF_utils'],
+    argus   => ['ARGUS_server']
   }
 }
