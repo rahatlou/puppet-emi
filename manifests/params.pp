@@ -8,17 +8,19 @@ class emi::params {
 
   ## from the table at https://twiki.cern.ch/twiki/bin/view/EMI/GenericInstallationConfigurationEMI3 below 'Installations'
   $packages = {
-    ui      => ['emi-ui', 'glite-ce-monitor-cli'],
-    wn      => ['emi-wn', 'glite-ce-monitor-cli', 'glexec-wn', 'yaim-glexec-wn'],
-    creamce => ['emi-lsf-utils', 'emi-cream-ce'],
-    argus   => ['emi-argus']
+    ui        => ['emi-ui', 'glite-ce-monitor-cli'],
+    wn        => ['emi-wn', 'glite-ce-monitor-cli', 'glexec-wn', 'yaim-glexec-wn'],
+    creamce   => ['emi-lsf-utils', 'emi-cream-ce'],
+    argus     => ['emi-argus'],
+    bdii-site => ['emi-bdii-site']
   }
 
   ##From the table at https://twiki.cern.ch/twiki/bin/view/EMI/GenericInstallationConfigurationEMI3 below 'Configuration information'
   $nodetype = {
-    ui      => ['UI'],
-    wn      => ['WN', 'GLEXEC_wn'],
-    creamce => ['creamCE', 'LSF_utils'],
-    argus   => ['ARGUS_server']
+    ui        => ['UI'],
+    wn        => ['WN', 'GLEXEC_wn'],
+    creamce   => ['creamCE', 'LSF_utils'],
+    argus     => ['ARGUS_server']
+    bdii-site => ['BDII_site']
   }
 }
