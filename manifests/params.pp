@@ -20,7 +20,7 @@ class emi::params {
     ui        => ['UI'],
     wn        => ['WN', 'GLEXEC_wn'],
     creamce   => ['creamCE', 'LSF_utils'],
-    argus     => ['ARGUS_server']
+    argus     => ['ARGUS_server'],
     bdii-site => ['BDII_site']
   }
 }
